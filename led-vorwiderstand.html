@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		
+		<title>LED Vorwiderstandsrechner :: Elektronik Tools</title>
+		
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!--[if IE]><script>document.charset="UTF-8";</script><![endif]-->
+	</head>
+	<body>
+		<header>
+			<h1>Elektronik Tools</h1>
+			<h2>LED Vorwiderstandsrechner</h2>
+		</header>
+		
+		<main>
+			<section id="form">
+				<form id="led">
+					<span>
+						<label for="U_ges">U<sub>ges</sub> <i>V</i></label>
+						<input type="number" name="U_ges" value="5">
+					</span>
+					<span>
+						<label for="U_LED">U<sub>LED</sub> <i>V</i></label>
+						<input type="number" name="U_LED" value="3.2">
+					</span>
+					<span>
+						<label for="I_LED">I<sub>LED</sub> <i>mA</i></label>
+						<input type="number" name="I_LED" value="20">
+					</span>
+					<span>
+						<label for="R_VorLED">R<sub>VorLED</sub> <i>&ohm;</i></label>
+						<input type="number" name="R_VorLED" value="0" class="ergebnis">
+					</span>
+				</form>
+			</section>
+		</main>
+		
+		<footer>
+			<p>
+				&copy; 2018 <a href="https://malte70.de" rel="me nofollow">malte70</a><br>
+				<a href="https://github.com/malte70/elektronik-tools">Github-Projekt</a>
+			</p>
+		</footer>
+		<script type="text/javascript" src="assets/js/led-vorwiderstand.js"></script>
+	</body>
+</html>

@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/**
+ * Colors: https://flatuicolors.com/palette/gb
+ */
+
+@import url(https://ancistrus.de/css/normalize.css);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300|Source+Serif+Pro);
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+a:link, a:visited {
+	color: #192a56;
+}
+
+a:hover, a:active {
+	color: #00a8ff;
+}
+
+body {
+	font: 25px "Source Serif Pro", serif;
+	color: #2f3640;
+	background: #f5f6fa;
+}
+
+@media (max-width: 500px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+header {
+	margin: 2em 0 0;
+	padding: .5em;
+	text-align: center;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 2em;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
+	color: #c23616;
+}
+
+header h1 a:link, header h1 a:visited {
+	color: #c23616;
+	text-decoration: none;
+}
+
+header h1 a:hover, header h1 a:active {
+	color: #00a8ff;
+}
+
+header h2 {
+	margin: 0;
+	font-size: 1.8em;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
+	color: #c23616;
+}
+
+main {
+	width: 35em;
+	margin: 1.5em auto 0;
+	max-width: 100%;
+	padding: 0 .5em;
+}
+
+main form span {
+	display: block;
+	margin: 0 0 1em;
+}
+
+main form span:after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+main form label {
+	width: 33%;
+	float: left;
+	padding-right: 1.5em;
+}
+
+main form label i {
+	font-style: normal;
+	text-align: right;
+	display: inline-block;
+}
+
+main form input {
+	width: 66%;
+	float: right;
+	padding: .2em;
+	border: 2px solid #dcdde1;
+	background: rgba(0,0,0,0);
+	font-family: "Source Code Pro", monospace;
+}
+
+main form input.ergebnis {
+	border: 0px none;
+	color: #e84118
+}
+
+footer {
+	margin: 1.5em 0;
+	padding: .5em;
+	text-align: center;
+}
+
+footer p {
+	margin: 0 0 .5em;
+	font-size: .7em;
+}
+
+footer p:last-child {
+	margin: 0;
+}
+
