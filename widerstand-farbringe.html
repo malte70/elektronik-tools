@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		
+		<title>Farbringe von Widerständen :: Elektronik Tools</title>
+		
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!--[if IE]><script>document.charset="UTF-8";</script><![endif]-->
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href="index.html">Elektronik Tools</a>
+			</h1>
+			<h2>Farbringe von Widerständen</h2>
+		</header>
+		
+		<main>
+			<section id="form">
+				<form id="farbringe">
+					<span>
+						<label for="ring1">1. Ring</label>
+						<select name="ring1" size=1">
+							<option value="1">braun</option>
+							<option value="2">rot</option>
+							<option value="3" selected>orange</option>
+							<option value="4">gelb</option>
+							<option value="5">grün</option>
+							<option value="6">blau</option>
+							<option value="7">lila</option>
+							<option value="8">grau</option>
+							<option value="9">weiß</option>
+						</select>
+					</span>
+					<span>
+						<label for="ring2">2. Ring</label>
+						<select name="ring2" size=1">
+							<option value="0">schwarz</option>
+							<option value="1">braun</option>
+							<option value="2">rot</option>
+							<option value="3" selected>orange</option>
+							<option value="4">gelb</option>
+							<option value="5">grün</option>
+							<option value="6">blau</option>
+							<option value="7">lila</option>
+							<option value="8">grau</option>
+							<option value="9">weiß</option>
+						</select>
+					</span>
+					<span>
+						<label for="ring3">3. Ring</label>
+						<select name="ring3" size=1">
+							<option value="-1" selected>(nicht vorhanden)</option>
+							<option value="0">schwarz</option>
+							<option value="1">braun</option>
+							<option value="2">rot</option>
+							<option value="3">orange</option>
+							<option value="4">gelb</option>
+							<option value="5">grün</option>
+							<option value="6">blau</option>
+							<option value="7">lila</option>
+							<option value="8">grau</option>
+							<option value="9">weiß</option>
+						</select>
+					</span>
+					<span>
+						<label for="ring4">4. Ring (Multiplikator)</label>
+						<select name="ring4" size=1">
+							<option value="1">schwarz</option>
+							<option value="10" selected>braun</option>
+							<option value="100">rot</option>
+							<option value="1000">orange</option>
+							<option value="10000">gelb</option>
+							<option value="100000">grün</option>
+							<option value="1000000">blau</option>
+							<option value="10000000">lila</option>
+							<option value="100000000">grau</option>
+							<option value="1000000000">weiß</option>
+							<option value="0.1">gold</option>
+							<option value="0.01">silber</option>
+						</select>
+					</span>
+					<span>
+						<label for="ring5">5. Ring (Toleranz)</label>
+						<select name="ring5" size=1">
+							<option value="1">braun</option>
+							<option value="2">rot</option>
+							<option value="0.5">grün</option>
+							<option value="0.25">blau</option>
+							<option value="0.1">lila</option>
+							<option value="0.05">grau</option>
+							<option value="5" selected>gold</option>
+							<option value="10">silber</option>
+						</select>
+					</span>
+					<span>
+						<label for="R">Widerstand <i>&ohm;</i></label>
+						<input type="text" name="R" value="0" class="ergebnis">
+					</span>
+					<span>
+						<label for="tolerance">Toleranz <i>%</i></label>
+						<input type="number" name="tolerance" value="0" class="ergebnis">
+					</span>
+				</form>
+			</section>
+		</main>
+		
+		<footer>
+			<p>
+				&copy; 2018 <a href="https://malte70.de" rel="me nofollow">malte70</a><br>
+				<a href="https://github.com/malte70/elektronik-tools">Github-Projekt</a>
+			</p>
+		</footer>
+		<script type="text/javascript" src="assets/js/widerstand-farbringe.js"></script>
+	</body>
+</html>
