@@ -105,6 +105,15 @@ main form input.ergebnis {
 	color: #e84118
 }
 
+main form select {
+	width: 66%;
+	float: right;
+	padding: .2em;
+	border: 2px solid #dcdde1;
+	background: rgba(0,0,0,0);
+	font-family: "Source Code Pro", monospace;
+}
+
 footer {
 	margin: 1.5em 0;
 	padding: .5em;
