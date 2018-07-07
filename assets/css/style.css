@@ -114,6 +114,44 @@ main form select {
 	font-family: "Source Code Pro", monospace;
 }
 
+/* RPi GPIO Pins */
+main .gpio-pinout {
+	white-space: pre;
+}
+main .gpio-pinout span {
+	font-weight: 600;
+}
+main .gpio-pinout .gpio {
+	color: #4cd137;
+}
+main .gpio-pinout .gnd {
+	color: #718093;
+}
+main .gpio-pinout ._5v {
+	color: #e84118;
+	/*color: #c23616;*/
+}
+main .gpio-pinout ._3v3 {
+	color: #00a8ff;
+}
+code.highlight {
+	font: .8em "Source Code Pro", monospace;
+}
+code.highlight .comment {
+	font-style: italic;
+	color: #999;
+}
+code.highlight .keyword {
+	font-weight: bold;
+}
+code.highlight .value {
+	color: #444;
+	font-style: italic;
+}
+code.highlight .function {
+	color: #555;
+}
+
 footer {
 	margin: 1.5em 0;
 	padding: .5em;

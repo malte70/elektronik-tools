@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		
+		<title>Raspberry Pi GPIO-Pins :: Elektronik Tools</title>
+		
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!--[if IE]><script>document.charset="UTF-8";</script><![endif]-->
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href="index.html">Elektronik Tools</a>
+			</h1>
+			<h2>Raspberry Pi GPIO-Pins</h2>
+		</header>
+		
+		<main>
+			<section id="intro">
+				<p>
+					Belegung der GPIO-Pins des Raspberry&nbsp;Pi Model&nbsp;B.
+				</p>
+			</section>
+			
+			<section id="pinput">
+				<h3>Belegung GPIO-Pins (<em>P1</em>)</h3>
+				<code class="gpio-pinout">   <span class="_3v3">3V3</span>  (1) (2)  <span class="_5v">5V</span>    
+ <span class="gpio">GPIO2</span>  (3) (4)  <span class="_5v">5V</span>    
+ <span class="gpio">GPIO3</span>  (5) (6)  <span class="gnd">GND</span>   
+ <span class="gpio">GPIO4</span>  (7) (8)  <span class="gpio">GPIO14</span>
+   <span class="gnd">GND</span>  (9) (10) <span class="gpio">GPIO15</span>
+<span class="gpio">GPIO17</span> (11) (12) <span class="gpio">GPIO18</span>
+<span class="gpio">GPIO27</span> (13) (14) <span class="gnd">GND</span>   
+<span class="gpio">GPIO22</span> (15) (16) <span class="gpio">GPIO23</span>
+   <span class="_3v3">3V3</span> (17) (18) <span class="gpio">GPIO24</span>
+<span class="gpio">GPIO10</span> (19) (20) <span class="gnd">GND</span>   
+ <span class="gpio">GPIO9</span> (21) (22) <span class="gpio">GPIO25</span>
+<span class="gpio">GPIO11</span> (23) (24) <span class="gpio">GPIO8</span> 
+   <span class="gnd">GND</span> (25) (26) <span class="gpio">GPIO7</span></code>
+			</section>
+			
+			<section id="led-example">
+				<h3>Python Code-Beispiel: Blinkende LED</h3>
+				<code class="highlight">
+					<span class="keyword">from</span> gpiozero <span class="keyword">import</span> LED<br>
+					<span class="keyword">from</span> time <span class="keyword">import</span> sleep<br>
+					led = <span class="function">LED</span>(<span class="value">2</span>)<br>
+					<span class="keyword">while</span> <span class="value">True</span>:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;led.<span class="function">on</span>()<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="function">sleep</span>(<span class="value">0.5</span>)<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;led.<span class="function">off</span>()<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class="function">sleep</span>(<span class="value">0.5</span>)
+				</code>
+			</section>
+		</main>
+		
+		<footer>
+			<p>
+				&copy; 2018 <a href="https://malte70.de" rel="me nofollow">malte70</a><br>
+				<a href="readme.html">Read Me</a> :: <a href="https://github.com/malte70/elektronik-tools">Github-Projekt</a>
+			</p>
+		</footer>
+	</body>
+</html>
