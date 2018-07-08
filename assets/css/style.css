@@ -151,7 +151,20 @@ code.highlight .value {
 code.highlight .function {
 	color: #555;
 }
-
+#readme_content, #license_content {
+  border: .1em solid #dcdde1;
+  padding: .5em;
+}
+#readme_content h4, #readme_content h5 {
+  margin: 0 0 .5em;
+}
+#license_content {
+  overflow-x: scroll;
+  white-space: pre;
+  font: .7em "Source Code Pro",monospace;
+  color: #f5f6fa;
+  background: #2f3640;
+}
 footer {
 	margin: 1.5em 0;
 	padding: .5em;

@@ -6,9 +6,23 @@ window.viewFile = function(name, id) {
 	request.open("GET", name);
 	request.addEventListener("load", function(event) {
 		if (request.status >= 200 && request.status < 300) {
-			document.getElementById(id).innerHTML = request.responseText;
+			if (name.substring(name.length-3, name.length) == ".md") {
+				var converter = new showdown.Converter();
+				converter.setOption("noHeaderId",           true);
+				converter.setOption("headerLevelStart",     4);
+				converter.setOption("openLinksInNewWindow", true);
+				
+				var md = request.responseText;
+				var html = converter.makeHtml(md);
+				
+			} else {
+				html = request.responseText;
+			}
+			document.getElementById(id).innerHTML = html;
+			
 		} else {
 			console.warn(request.statusText, request.responseText);
+			
 		}
 	});
 	request.send();
