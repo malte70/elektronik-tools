@@ -1,6 +1,9 @@
 /**
  * README.md und LICENCE darstellen
  */
+
+"use strict";
+
 window.viewFile = function(name, id) {
 	var request = new XMLHttpRequest();
 	request.open("GET", name);
