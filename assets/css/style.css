@@ -116,7 +116,6 @@ main form select {
 
 /* RPi GPIO Pins */
 main .gpio-pinout {
-	white-space: pre;
 }
 main .gpio-pinout span {
 	font-weight: 600;
