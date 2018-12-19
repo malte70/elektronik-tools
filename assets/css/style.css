@@ -3,7 +3,7 @@
  * Colors: https://flatuicolors.com/palette/gb
  */
 
-@import url(https://ancistrus.de/css/normalize.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300|Source+Serif+Pro);
 
 *, *:before, *:after {
