@@ -33,5 +33,6 @@ window.viewFile = function(name, id) {
 
 window.onload = function() {
 	window.viewFile("README.md", "readme_content");
+	window.viewFile("TODO.md",   "todo_content");
 	window.viewFile("LICENSE",   "license_content");
 };

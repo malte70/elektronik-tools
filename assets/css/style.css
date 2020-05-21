@@ -150,11 +150,11 @@ code.highlight .value {
 code.highlight .function {
 	color: #555;
 }
-#readme_content, #license_content {
+#readme_content, #todo_content, #license_content {
   border: .1em solid #dcdde1;
   padding: .5em;
 }
-#readme_content h4, #readme_content h5 {
+#readme_content h4, #readme_content h5, #todo_content h4, #todo_content h5 {
   margin: 0 0 .5em;
 }
 #license_content {
